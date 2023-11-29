@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.48\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.48\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -27,13 +27,22 @@
       "name": "ReportSection",
       "visualContainers": [
         {
-          "config": "{\"name\":\"7eec685843c4ae143774\",\"layouts\":[{\"id\":0,\"position\":{\"x\":283.8302123956554,\"y\":64.68688561575402,\"z\":0,\"width\":801.3252973216876,\"height\":567.6604247913108,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DimPromotion.EnglishPromotionName\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(DimPromotion.MinQty)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimPromotion\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"EnglishPromotionName\"},\"Name\":\"DimPromotion.EnglishPromotionName\",\"NativeReferenceName\":\"EnglishPromotionName\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"MinQty\"}},\"Function\":0},\"Name\":\"Sum(DimPromotion.MinQty)\",\"NativeReferenceName\":\"Sum of MinQty\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"MinQty\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"7eec685843c4ae143774\",\"layouts\":[{\"id\":0,\"position\":{\"x\":25.644599303135887,\"y\":165.01742160278746,\"z\":0,\"width\":535.1916376306621,\"height\":364.59930313588853,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DimPromotion.EnglishPromotionName\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(DimPromotion.MinQty)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimPromotion\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"EnglishPromotionName\"},\"Name\":\"DimPromotion.EnglishPromotionName\",\"NativeReferenceName\":\"EnglishPromotionName\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"MinQty\"}},\"Function\":0},\"Name\":\"Sum(DimPromotion.MinQty)\",\"NativeReferenceName\":\"Sum of MinQty\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"MinQty\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
-          "height": 567.66,
-          "width": 801.33,
-          "x": 283.83,
-          "y": 64.69,
+          "height": 364.60,
+          "width": 535.19,
+          "x": 25.64,
+          "y": 165.02,
           "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"bcbd5970b2059247e456\",\"layouts\":[{\"id\":0,\"position\":{\"x\":661.184668989547,\"y\":152.75261324041813,\"z\":1,\"width\":535.1916376306621,\"height\":364.59930313588853,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(DimPromotion.DiscountPct)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimPromotion\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"DiscountPct\"}},\"Function\":0},\"Name\":\"Sum(DimPromotion.DiscountPct)\",\"NativeReferenceName\":\"Sum of DiscountPct\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"DiscountPct\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 364.60,
+          "width": 535.19,
+          "x": 661.18,
+          "y": 152.75,
+          "z": 1.00
         }
       ],
       "width": 1280.00
