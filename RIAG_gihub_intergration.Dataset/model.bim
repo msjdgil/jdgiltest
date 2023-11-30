@@ -573,6 +573,20 @@
           }
         ],
         "lineageTag": "8dbd213b-5273-4e68-8fc5-7a386d523cfe",
+        "measures": [
+          {
+            "name": "ListPriceMeasure",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-DE\"}"
+              }
+            ],
+            "expression": "SUM(DimProduct[ListPrice])",
+            "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
+            "lineageTag": "02e34006-20d6-4548-9639-c1ed5fabb82b"
+          }
+        ],
         "partitions": [
           {
             "name": "DimProduct",
